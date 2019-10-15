@@ -1,0 +1,86 @@
+.my-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .header-logo {
+    float: left;
+
+    .logo-img, .logo-resume {
+      float: left;
+    }
+
+    .logo-img img {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      margin: 10px 50px;
+      transition: all 0.5s;
+
+      &:hover {
+        box-shadow: 0 0 30px #0000ff;
+      }
+    }
+
+    .logo-resume {
+      text-align: center;
+      color: #000;
+      margin-top: 7px;
+      margin-left: -5px;
+
+      .resume-p1 {
+        border-bottom: 2px solid #333;
+        width: 120px;
+        padding-bottom: 5px;
+      }
+
+      .resume-p2 {
+        margin-top: -10px;
+      }
+    }
+  }
+  .header-nav {
+    float: right;
+    margin-right: 50px;
+
+    ul li {
+      float: left;
+      text-align: center;
+      line-height: 80px;
+      padding: 0 30px;
+
+      a {
+        position: relative;
+        color: #000;
+
+        &:after {
+          content: "";
+          width: 0px;
+          height: 3px;
+          background-color: #16a5d4;
+          position: absolute;
+          bottom: -15px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: all 0.2s ease-in
+        }
+
+        &:hover {
+          text-decoration:none;
+          color: #107bb3;
+        }
+
+        &:hover:after {
+          bottom: -30px;
+          width: 40px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
