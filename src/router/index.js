@@ -3,17 +3,17 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import Home from '../pages/Home.vue';
+import Main from '../pages/Main.vue';
 
 export default new VueRouter({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/main'
     },
     {
-      path: '/home',
-      component: Home
+      path: '/main',
+      component: Main
     }
   ]
 });

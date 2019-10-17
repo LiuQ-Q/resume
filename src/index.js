@@ -1,6 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-import 'swiper/dist/css/swiper.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+import 'swiper/dist/css/swiper.css';
+import 'animate.css';
 
 import Vue from 'vue';
 import App from './App.vue';
