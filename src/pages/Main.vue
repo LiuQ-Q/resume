@@ -2,13 +2,15 @@
   <div style="height:100%;">
     <myHeader></myHeader>
 
-    <swiper  style="height:100%;" :options="swiperOption">
+    <swiper style="height:100%;" :options="swiperOption">
       <swiper-slide class="slide-home">
         <div class="home-cover slide-top">
           <Home></Home>
         </div>
       </swiper-slide>
-      <swiper-slide style="background:blue;">Slide 2</swiper-slide>
+      <swiper-slide class="slide-introduce slide-top">
+        <Introduce></Introduce>
+      </swiper-slide>
       <swiper-slide style="background:green;">Slide 3</swiper-slide>
       <swiper-slide style="background:gray;">Slide 4</swiper-slide>
       <swiper-slide style="background:black;">Slide 5</swiper-slide>
@@ -20,11 +22,13 @@
 <script>
 import myHeader from '../components/Header.vue';
 import Home from '../components/Home.vue';
+import Introduce from '../components/Introduce.vue';
 
 export default {
   components: {
     myHeader,
-    Home
+    Home,
+    Introduce
   },
   data() {
     return {
@@ -48,7 +52,7 @@ export default {
   padding-top: 150px;
 }
 .slide-home {
-  background-image: url('../assets/bg1.jpg');
+  background-image: url('../assets/bg.jpg');
   background-size: 100% 100%;
 
   .home-cover {
@@ -56,5 +60,8 @@ export default {
     width: 100%;
     background-color: rgba(222,222,222,0.5);
   }
+}
+.slide-introduce {
+  background: url('../assets/cover.png') #107bb3;
 }
 </style>
