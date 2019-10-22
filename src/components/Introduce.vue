@@ -31,10 +31,10 @@ export default {
  data() {
    return {
      contents: [
-       { src: '/src/assets/education.png', message: '学历/本科' },
-       { src: '/src/assets/age.png', message: '年龄/24岁' },
-       { src: '/src/assets/location.png', message: '坐标/天津' },
-       { src: '/src/assets/status.png', message: '状态/求职' },
+       { src: require('../assets/education.png'), message: '学历/本科' },
+       { src: require('../assets/age.png'), message: '年龄/24岁' },
+       { src: require('../assets/location.png'), message: '坐标/天津' },
+       { src: require('../assets/status.png'), message: '状态/求职' },
      ]
    }
  },
