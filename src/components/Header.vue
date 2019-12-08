@@ -1,5 +1,5 @@
 <template>
-  <header class="my-header">
+  <header id="my-header">
     <div class="header-logo">
       <div class="logo-img">
         <img src="../assets/logo.jpg" alt="">

@@ -1,5 +1,5 @@
 <template>
-  <div class="introduce">
+  <div id="introduce">
     <b-container>
       <h2>自我介绍</h2>
       <b-row class="introduce-content">

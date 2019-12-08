@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home">
     <b-container>
       <div class="home-img animated fadeIn">
         <img src="../assets/lq.jpg" alt="">
