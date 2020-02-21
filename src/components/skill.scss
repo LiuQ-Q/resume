@@ -1,0 +1,185 @@
+#skill {
+  text-align: center;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 100px;
+  }
+
+  .content-skill {
+    height: 400px;
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+  .content-skill .skill-in {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px dashed #0000ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+  }
+  .content-skill .skill-in li {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    position: absolute;
+    top: 65px;
+    left: 65px;
+  }
+  .content-skill .skill-in li:nth-child(1) {
+    animation: html 10s linear infinite;
+    background-color: rgba(100,100,0,0.5);
+  }
+  .content-skill .skill-in li:nth-child(2) {
+    animation: css 10s linear infinite;
+    background-color: rgba(140,10,85,0.5);
+  }
+  .content-skill .skill-in li:nth-child(3) {
+    animation: js 10s linear infinite;
+    background-color: rgba(20,40,100,0.5);
+  }
+  .content-skill .skill-out {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid #7f4a82;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+  }
+  .content-skill .skill-out li {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+  }
+  .content-skill .skill-out li:nth-child(1){
+    animation: jq 15s linear infinite;
+    background-color: rgba(255,0,0,0.5);
+  }
+  .content-skill .skill-out li:nth-child(2){
+    animation: ajax 15s linear infinite;
+    background-color: rgba(255,150,0,0.5);
+  }
+  .content-skill .skill-out li:nth-child(3){
+    animation: json 15s linear infinite;
+    background-color: rgba(255,255,0,0.5);
+  }
+  .content-skill .skill-out li:nth-child(4){
+    animation: ps 15s linear infinite;
+    background-color: rgba(0,255,0,0.5);
+  }
+  .content-skill .skill-out li:nth-child(5){
+    animation: h5 15s linear infinite;
+    background-color: rgba(0,255,255,0.5);
+  }
+  .content-skill .skill-out li:nth-child(6){
+    animation: c3 15s linear infinite;
+    background-color: rgba(0,0,255,0.5);
+  }
+  .content-skill .skill-out li:nth-child(7){
+    animation: vue 15s linear infinite;
+    background-color: rgba(255,0,255,0.5);
+  }
+  
+  .content-info {
+    float: left;
+    font-size: 23px;
+    width: 50%;
+    margin-top: 35px;
+  }
+  .content-info p {
+    text-align: left;
+    margin: 0 0 10px;
+  }
+
+  @keyframes html {
+    from {
+      transform: rotate(0deg) translateY(100px) rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg) translateY(100px) rotate(360deg);
+    }
+  }
+  @keyframes css {
+    from {
+      transform: rotate(0deg) translate(86px,-50px) rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg) translate(86px,-50px) rotate(360deg);
+    }
+  }
+  @keyframes js {
+    from {
+      transform: rotate(0deg) translate(-86px,-50px) rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg) translate(-86px,-50px) rotate(360deg);
+    }
+  }
+  @keyframes jq {
+    from {
+      transform: rotate(0deg) translate(200px,0) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(200px,0) rotate(-360deg);
+    }
+  }
+  @keyframes ajax {
+    from {
+      transform: rotate(0deg) translate(116px,158px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(116px,158px) rotate(-360deg);
+    }
+  }
+  @keyframes json {
+    from {
+      transform: rotate(0deg) translate(-53px,188px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(-53px,188px) rotate(-360deg);
+    }
+  }
+  @keyframes ps {
+    from {
+      transform: rotate(0deg) translate(-182px,82px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(-182px,82px) rotate(-360deg);
+    }
+  }
+  @keyframes h5 {
+    from {
+      transform: rotate(0deg) translate(-176px,-99px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(-176px,-99px) rotate(-360deg);
+    }
+  }
+  @keyframes c3 {
+    from {
+      transform: rotate(0deg) translate(-30px,-198px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(-30px,-198px) rotate(-360deg);
+    }
+  }
+  @keyframes vue {
+    from {
+      transform: rotate(0deg) translate(131px,-151px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(131px,-151px) rotate(-360deg);
+    }
+  }
+}
