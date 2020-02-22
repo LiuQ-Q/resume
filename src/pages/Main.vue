@@ -18,7 +18,10 @@
       </swiper-slide>
 
       <swiper-slide style="background:gray;">Slide 4</swiper-slide>
-      <swiper-slide style="background:black;">Slide 5</swiper-slide>
+
+      <swiper-slide class="slide-contact slide-top">
+        <Contact></Contact>
+      </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </div>
@@ -29,13 +32,16 @@ import myHeader from '../components/Header.vue';
 import Home from '../components/Home.vue';
 import Introduce from '../components/Introduce.vue';
 import Skill from '../components/Skill.vue';
+import Contact from '../components/Contact.vue';
 
 export default {
   components: {
     myHeader,
     Home,
     Introduce,
-    Skill
+    Skill,
+    
+    Contact
   },
   data() {
     return {
@@ -73,5 +79,8 @@ export default {
 }
 .slide-skill {
   background: url('../assets/cover.png') #DEDEDE;
+}
+.slide-contact {
+  background: url('../assets/cover.png') #107bb3;
 }
 </style>
