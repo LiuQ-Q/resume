@@ -1,8 +1,8 @@
 <template>
   <div style="height:100%;">
-    <myHeader></myHeader>
+    <myHeader @slide-to="slideTo"></myHeader>
 
-    <swiper style="height:100%;" :options="swiperOption">
+    <swiper ref="mySwiper" style="height:100%;" :options="swiperOption">
       <swiper-slide class="slide-home">
         <div class="home-cover slide-top">
           <Home></Home>
@@ -17,7 +17,9 @@
         <Skill></Skill>
       </swiper-slide>
 
-      <swiper-slide style="background:gray;">Slide 4</swiper-slide>
+      <swiper-slide class="slide-project slide-top">
+        <Project></Project>
+      </swiper-slide>
 
       <swiper-slide class="slide-contact slide-top">
         <Contact></Contact>
@@ -32,6 +34,7 @@ import myHeader from '../components/Header.vue';
 import Home from '../components/Home.vue';
 import Introduce from '../components/Introduce.vue';
 import Skill from '../components/Skill.vue';
+import Project from '../components/Project.vue';
 import Contact from '../components/Contact.vue';
 
 export default {
@@ -40,7 +43,7 @@ export default {
     Home,
     Introduce,
     Skill,
-    
+    Project,
     Contact
   },
   data() {
@@ -53,8 +56,15 @@ export default {
         pagination: {
           el: '.swiper-pagination',
           clickable: true
-        }
+        },
+        hashNavigation: true
       }
+    }
+  },
+  methods: {
+    slideTo(slideNum) {
+      // console.log(slideNum);
+      this.$refs.mySwiper.swiper.slideTo(slideNum, 1000, false);
     }
   }
 }
@@ -79,6 +89,9 @@ export default {
 }
 .slide-skill {
   background: url('../assets/cover.png') #DEDEDE;
+}
+.slide-project {
+  background: url('../assets/cover.png') #109085;
 }
 .slide-contact {
   background: url('../assets/cover.png') #107bb3;

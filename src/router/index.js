@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import Main from '../pages/Main.vue';
+import Resume from '../pages/Resume.vue';
 
 export default new VueRouter({
   routes: [
@@ -14,6 +15,10 @@ export default new VueRouter({
     {
       path: '/main',
       component: Main
+    },
+    {
+      path: '/resume',
+      component: Resume
     }
   ]
 });

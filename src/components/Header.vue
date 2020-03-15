@@ -15,7 +15,7 @@
           v-for="(nav, index) in navs"
           :key="index"
         >
-          <a :href="nav.href">{{ nav.title }}</a>
+          <a @click="target(nav.target)">{{ nav.title }}</a>
         </li>
       </ul>
     </nav>
@@ -30,12 +30,26 @@ export default {
     return {
       name: '刘琦',
       navs: [
-        { title: '首页', href: '' },
-        { title: '简历', href: '' },
-        { title: '项目', href: '' },
-        { title: '关于', href: '' },
+        { title: '首页', target: 'main' },
+        { title: '简历', target: 'resume' },
+        { title: '项目', target: 'project' },
+        { title: '关于', target: 'about' },
       ]
     }
   },
+  methods: {
+    target(target) {
+      if (target === 'main') {
+        //  window.location.href = 'http://www.baidu.com'
+        this.$emit('slide-to', 0)
+      } else if (target === 'resume') {
+        this.$router.push('/resume')
+      } else if (target === 'project') {
+        this.$emit('slide-to', 3)
+      } else if (target === 'about') {
+        this.$emit('slide-to', 4)
+      }
+    }
+  }
 }
 </script>

@@ -16,14 +16,12 @@
       </div>
 
       <div class="content-info">
-        <p>熟悉css+div布局，熟悉JavaScript，了解HTML语义化</p>
-        <p>熟悉浏览器的兼容，前端性能优化</p>
-        <p>熟悉HTML5，熟悉响应式布局，百分比自适应布局</p>
-        <p>熟悉CSS3动画技术，Animate.css动画库</p>
-        <p>熟悉AJAX，JSON，熟悉正则表达式，JSONP跨域请求</p>
-        <p>熟悉jQuery框架的使用，了解jQuery的DOM操作及事件处理</p>
-        <p>熟悉node.js，熟悉vue框架的使用</p>
-        <p>熟悉Sublime，WebStorm，Fireworks，Photoshop等开发工具</p>
+        <p>熟悉HTML5，CSS3，能够手写代码，布局页面，实现各种效果</p>
+        <p>熟悉JavaScript，熟悉ES6常用语法</p>
+        <p>熟悉DOM、BOM、Ajax、JSON等技术</p>
+        <p>熟悉Vue框架的使用</p>
+        <p>熟悉Git常用命令，进行多人协作开发</p>
+        <p>熟悉webpack，npm等开发工具的使用</p>
       </div>
     <!-- </b-container> -->
   </div>
@@ -33,12 +31,12 @@
 import './skill.scss';
 
 export default {
- data() {
-   return {
-     skillIn: ['HTML', 'CSS', 'JS'],
-     skillOut: ['jQuery', 'Ajax', 'JSON', 'PS', 'HTML5', 'CSS3', 'Vue']
-   }
- },
+  data() {
+    return {
+      skillIn: ['HTML', 'CSS', 'JS'],
+      skillOut: ['webpack', 'Ajax', 'JSON', 'Git', 'HTML5', 'CSS3', 'Vue']
+    }
+  },
 }
 </script>
 
