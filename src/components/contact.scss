@@ -75,4 +75,45 @@
     bottom: -35px;
     left: 0px;
   }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 25px;
+      margin-bottom: 30px;
+      margin-top: -50px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .content-info {
+      width: auto;
+
+      .info-border1,
+      .info-border2 {
+        display: none;
+      }
+
+      ul {
+        width: auto;
+        padding-left: 0;
+        height: 50px;
+
+        li {
+          width: 25%;
+          font-size: 25px;
+          padding: 0 0 0 0;
+        }
+      }
+
+      p:nth-child(1) {
+        margin-top: 10px;
+      }
+
+      .info-tel,
+      .info-email {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
 }

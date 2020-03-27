@@ -9,7 +9,7 @@
         <p class="resume-p2">个人简历</p>
       </div>
     </div>
-    <nav class="header-nav">
+    <nav class="header-nav d-none d-md-block">
       <ul>
         <li
           v-for="(nav, index) in navs"
@@ -19,6 +19,13 @@
         </li>
       </ul>
     </nav>
+    <!-- <nav class="header-nav d-xl-none">
+      <ul>
+        <li>
+          <a @click="target('resume')">简历</a>
+        </li>
+      </ul>
+    </nav> -->
   </header>
 </template>
 

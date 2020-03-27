@@ -84,4 +84,18 @@
       }
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .header-logo {
+      .logo-img img {
+        display: none;
+      }
+      .logo-resume {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+      }
+    }
+  }
 }

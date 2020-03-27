@@ -182,4 +182,35 @@
       transform: rotate(360deg) translate(131px,-151px) rotate(-360deg);
     }
   }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 25px;
+      margin-bottom: 30px;
+      margin-top: -50px;
+    }
+
+    .content-skill {
+      transform: scale(0.5);
+      width: 100%;
+      float: none;
+      margin-top: -100px;
+
+      .skill-in,
+      .skill-out {
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .content-info {
+      float: none;
+      font-size: 13px;
+      width: 100%;
+      margin-top: -55px;
+
+      p	{
+        text-align: center;
+      }
+    }
+  }
 }

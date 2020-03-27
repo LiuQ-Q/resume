@@ -16,11 +16,11 @@
         <p>期待有机会与您共事</p>
       </div>
       <div class="info-tel">
-        <img src="images/phone.svg" alt="">
+        <img src="../assets/phone.svg" alt="">
         18540225267
       </div>
       <div class="info-email">
-        <img src="images/email.svg" alt="">
+        <img src="../assets/email.svg" alt="">
         545784977@qq.com
       </div>
       <span class="info-border1"></span>

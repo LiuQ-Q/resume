@@ -24,7 +24,7 @@
       <swiper-slide class="slide-contact slide-top">
         <Contact></Contact>
       </swiper-slide>
-      <div class="swiper-pagination" slot="pagination"></div>
+      <div class="swiper-pagination d-none d-md-block" slot="pagination"></div>
     </swiper>
   </div>
 </template>

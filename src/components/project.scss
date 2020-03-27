@@ -36,4 +36,53 @@
       right: 33%;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 25px;
+      margin-bottom: 30px;
+      margin-top: -50px;
+    }
+
+    .container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    .swiper {
+      // height: 300px;
+      width: 100%;
+      background: url("../assets/project_bg.jpg");
+      border-radius: 10px;
+      
+      .swiper-slide {
+        .project-name {
+          font-size: 23px;
+          padding: 20px 0 0 0;
+          text-align: center;
+        }
+        .project-technology {
+          font-size: 16px;
+          padding: 0 0 0 0;
+          text-align: center;
+        }
+        .project-abstract {
+          font-size: 16px;
+          padding: 0 10px 0 10px;
+          text-align: center;
+          // width: auto;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .swiper {
+      .swiper-slide {
+        .project-abstract {
+          width: auto;
+        }
+      }
+    }
+  }
 }

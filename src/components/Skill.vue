@@ -2,6 +2,7 @@
   <div id="skill">
     <!-- <b-container> -->
       <h2>技能</h2>
+      
       <div class="content-skill">
         <ul class="skill-in">
           <li

@@ -6,11 +6,11 @@
       </div>
 
       <div class="content-info">
-        <p class="info-motto animated fadeInUp delay-1s">
+        <p class="info-motto animated fadeInUp delay-1s d-none d-sm-inline-block">
           不思,固有惑;不求,故无得;不问,固不知
         </p>
-        <span class="info-line animated fadeInUp delay-1s"></span>
-        <div class="info-mine animated flipInY delay-2s">
+        <span class="info-line animated fadeInUp delay-1s d-none d-sm-inline-block"></span>
+        <div class="info-mine animated flipInY delay-1.5s">
           <p>我叫刘琦</p>
           <p>今年 24 岁</p>
           <p>一名前端开发工程师</p>

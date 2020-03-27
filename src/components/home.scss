@@ -31,4 +31,14 @@
       margin-bottom: 25px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    .home-img img {
+      height: 150px;
+      width: 150px;
+      border-radius: 100px;
+      opacity: 1;
+    }
+  }
 }
