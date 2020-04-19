@@ -10,7 +10,17 @@
           v-for="(project, index) in projectList"
           :key="index"
         >
-          <p class="project-name">{{ project.name }}</p>
+          <p
+            v-if="!project.address"
+            class="project-name"
+          >{{ project.name }}</p>
+          <div
+            v-if="project.address"
+            class="project-name"
+            style="margin-bottom:1rem;"
+          >
+            <a :href="project.address" target="_blank">{{ project.name }}</a>
+          </div>
           <p class="project-technology">{{ project.technology }}</p>
           <p class="project-abstract">{{ project.abstract }}</p>
         </swiper-slide>
@@ -52,14 +62,15 @@ export default {
           abstract: "与南洋理工大学合作开发，扫描指定上传文件的开源漏洞，利用南洋理工大学的线上扫描平台, 与线上服务器进行通信, 获取数据, 开发新版前端, 包括登录功能, 数据图形展示, 文件上传及下载功能，在后续实际应用中，项目表现良好",
         },
         {
-          name: "安全开发管理平台 (前端)",
-          technology: "vue + webpack + js + bootstrap-vue",
-          abstract: "为中国银行开发一款对开发过程的安全与生命周期进行管理的平台，参与项目前端的设计与实现，与后端工程师进行数据交互，完成各个页面布局，实现登录功能，数据展示，以及项目中“将开发过程图形化”的功能等",
-        },
-        {
           name: "个人主页 (本网页)",
           technology: "vue + webpack + js",
           abstract: "目前为个人简历网页，仍在优化中",
+        },
+        {
+          name: "个人博客",
+          technology: "react + ant design",
+          address: "http://123.56.40.114",
+          abstract: "博客前端使用 Next + Antd Design 构建, 目前还未全部完成, 仍在优化中, 项目后端使用 egg + mysql 构建, 项目目前运行在腾讯云, 使用 Nginx + pm2",
         },
       ]
     }
